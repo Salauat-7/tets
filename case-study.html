@@ -1,0 +1,155 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus IT Help Desk</title>
+</head>
+<body>
+
+    <header>
+        <h1>Campus IT Help Desk</h1>
+        <p>
+            Welcome to the Coventry University Campus IT Help Desk.
+            We help students solve technical problems, reset passwords,
+            install software, and report broken computers.
+        </p>
+        <p>Our team is available Monday to Friday.</p>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>How to Get Help</h2>
+
+            <h3>Contact Us</h3>
+            <ul>
+                <li>Visit our help desk in person.</li>
+                <li>Email: <a href="mailto:helpdesk@university.edu">helpdesk@university.edu</a></li>
+                <li>Phone: <a href="tel:+1234567890">+0 000 000 0000</a></li>
+            </ul>
+
+            <h3>Before Submitting a Request</h3>
+            <ol>
+                <li>Restart your device.</li>
+                <li>Check all cables and connections.</li>
+                <li>Write down the error message.</li>
+            </ol>
+        </section>
+
+        <section>
+            <h2>Walk-in Hours</h2>
+
+            <table border="1">
+                <caption>Campus IT Help Desk Opening Hours</caption>
+
+                <thead>
+                    <tr>
+                        <th>Day</th>
+                        <th>Opens</th>
+                        <th>Closes</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Monday–Thursday</td>
+                        <td>9:00</td>
+                        <td>17:00</td>
+                    </tr>
+                    <tr>
+                        <td>Friday</td>
+                        <td>9:00</td>
+                        <td>15:00</td>
+                    </tr>
+                    <tr>
+                        <td>Saturday–Sunday</td>
+                        <td colspan="2">Closed</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Quick Links</h2>
+
+            <ul>
+                <li><a href="https://passwordreset.microsoftonline.com/">Password Reset</a></li>
+                <li><a href="https://www.google.com/maps">Lab Locations</a></li>
+                <li><a href="https://www.microsoft.com/en-us/software-download/">Software Catalog</a></li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Submit a Request</h2>
+
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>IT Support Request Form</legend>
+
+                    <p>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </p>
+
+                    <p>
+                        <label for="student-id">Student ID:</label>
+                        <input type="text" id="student-id" name="student-id" required>
+                    </p>
+
+                    <p>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </p>
+
+                    <p>
+                        <label for="issue-type">Issue Type:</label>
+                        <select id="issue-type" name="issue-type" required>
+                            <option value="">Select an issue</option>
+                            <option value="password">Password</option>
+                            <option value="software">Software</option>
+                            <option value="hardware">Hardware</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="description">Description:</label>
+                        <textarea id="description" name="description"
+                                  rows="5" cols="30" required></textarea>
+                    </p>
+
+                    <p>Urgency:</p>
+
+                    <input type="radio" id="low" name="urgency" value="low" required>
+                    <label for="low">Low</label>
+
+                    <input type="radio" id="medium" name="urgency" value="medium">
+                    <label for="medium">Medium</label>
+
+                    <input type="radio" id="high" name="urgency" value="high">
+                    <label for="high">High</label>
+
+                    <p>
+                        <input type="checkbox" id="tried-steps" name="tried-steps" required>
+                        <label for="tried-steps">
+                            I have tried the steps above
+                        </label>
+                    </p>
+
+                    <button type="submit">Submit Request</button>
+
+                </fieldset>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Campus IT Help Desk. All rights reserved.</p>
+        <p>Contact us: helpdesk@university.edu</p>
+    </footer>
+
+</body>
+</html>
