@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salauat Nova Creative Studio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6fb;
+            color: #20243a;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #171b35;
+            color: white;
+            padding: 25px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        header h1 {
+            font-size: 26px;
+        }
+
+        nav {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #8f9fff;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+            background: linear-gradient(135deg, #22274d, #6366f1);
+            color: white;
+        }
+
+        .hero h2 {
+            font-size: 46px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            max-width: 650px;
+            margin: 0 auto 30px;
+            font-size: 18px;
+        }
+
+        .button {
+            display: inline-block;
+            background: #ffffff;
+            color: #292e65;
+            padding: 12px 25px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 5px;
+        }
+
+        .button:hover {
+            background: #dfe3ff;
+        }
+
+        main {
+            max-width: 1100px;
+            margin: auto;
+            padding: 50px 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 30px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px #20243a12;
+            text-align: center;
+        }
+
+        .card h3 {
+            margin-bottom: 12px;
+            color: #5057d8;
+        }
+
+        .card p {
+            margin-bottom: 20px;
+        }
+
+        .card a {
+            color: #5057d8;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .card a:hover {
+            text-decoration: underline;
+        }
+
+        .content-page {
+            display: none;
+            min-height: 70vh;
+            padding: 60px 20px;
+        }
+
+        .content-page:target {
+            display: block;
+        }
+
+        body:has(.content-page:target) #home {
+            display: none;
+        }
+
+        .content-box {
+            max-width: 850px;
+            margin: auto;
+            background: white;
+            padding: 45px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px #20243a12;
+        }
+
+        .content-box h2 {
+            color: #5057d8;
+            margin-bottom: 20px;
+            font-size: 32px;
+        }
+
+        .content-box p,
+        .content-box ul {
+            margin-bottom: 20px;
+        }
+
+        .content-box ul {
+            padding-left: 25px;
+        }
+
+        .home-button {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 12px 24px;
+            border-radius: 8px;
+            background: #5057d8;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .home-button:hover {
+            background: #373ca7;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 15px;
+            margin: 25px 0;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        address {
+            font-style: normal;
+            margin: 20px 0;
+        }
+
+        footer {
+            background: #171b35;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin-top: 30px;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            nav {
+                justify-content: center;
+            }
+
+            .hero h2 {
+                font-size: 34px;
+            }
+
+            .content-box {
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Nova Studio</h1>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section id="home" class="hero">
+    <h2>Welcome to Nova Studio</h2>
+    <p>We transform creative ideas into modern digital experiences through design, technology, and innovation.</p>
+    <a href="#services" class="button">Explore Services</a>
+    <a href="#about" class="button">Discover Our Story</a>
+</section>
+
+<main id="main-content">
+    <section id="home-links">
+        <h2 class="section-title">Explore Our Website</h2>
+        <div class="cards">
+            <article class="card">
+                <h3>About Us</h3>
+                <p>Learn about our story, values, and creative vision.</p>
+                <a href="#about">Learn More →</a>
+            </article>
+
+            <article class="card">
+                <h3>Our Services</h3>
+                <p>Discover the digital solutions we offer.</p>
+                <a href="#services">Explore Services →</a>
+            </article>
+
+            <article class="card">
+                <h3>Gallery</h3>
+                <p>Explore inspiration and examples of creative work.</p>
+                <a href="#gallery">View Gallery →</a>
+            </article>
+
+            <article class="card">
+                <h3>Contact Us</h3>
+                <p>Get in touch with us to discuss your ideas.</p>
+                <a href="#contact">Contact Us →</a>
+            </article>
+        </div>
+    </section>
+</main>
+
+<section id="about" class="content-page">
+    <div class="content-box">
+        <h2>About Nova Studio</h2>
+        <p>Nova Studio is a creative digital studio focused on building meaningful online experiences. We combine creativity, technology, and thoughtful design to help ideas become reality.</p>
+        <p>Our mission is to make digital experiences accessible, attractive, and easy to use.</p>
+        <h3>Our Values</h3>
+        <ul>
+            <li>Creativity and innovation</li>
+            <li>Quality and attention to detail</li>
+            <li>Collaboration and communication</li>
+            <li>Continuous learning</li>
+        </ul>
+        <a href="#home" class="home-button">← Home</a>
+    </div>
+</section>
+
+<section id="services" class="content-page">
+    <div class="content-box">
+        <h2>Our Services</h2>
+        <p>We provide creative and technical services for individuals, students, and businesses.</p>
+        <ul>
+            <li><strong>Web Design:</strong> Modern and responsive website layouts.</li>
+            <li><strong>Web Development:</strong> Functional websites using HTML, CSS, and JavaScript.</li>
+            <li><strong>Graphic Design:</strong> Visual identities, banners, and digital graphics.</li>
+            <li><strong>UI/UX Design:</strong> User-friendly interfaces and improved user experiences.</li>
+            <li><strong>Consultation:</strong> Guidance for digital projects and creative ideas.</li>
+        </ul>
+        <a href="#home" class="home-button">← Home</a>
+    </div>
+</section>
+
+<section id="gallery" class="content-page">
+    <div class="content-box">
+        <h2>Our Gallery</h2>
+        <p>Explore a selection of creative inspiration, modern architecture, and digital design.</p>
+        <div class="gallery">
+            <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=600&q=80" alt="Modern creative workspace">
+            <img src="https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?auto=format&fit=crop&w=600&q=80" alt="Minimal interior design">
+            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=600&q=80" alt="Web development workspace">
+            <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=600&q=80" alt="Creative team collaborating">
+        </div>
+        <a href="#home" class="home-button">← Home</a>
+    </div>
+</section>
+
+<section id="contact" class="content-page">
+    <div class="content-box">
+        <h2>Contact Us</h2>
+        <p>Have a project idea or a question? We would be happy to hear from you.</p>
+        <address>
+            <p><strong>Email:</strong> hello@novastudio.example</p>
+            <p><strong>Phone:</strong> +7 700 000 0000</p>
+            <p><strong>Location:</strong> Astana, Kazakhstan</p>
+        </address>
+        <form action="mailto:hello@novastudio.example" method="post" enctype="text/plain">
+            <p>
+                <label for="name">Your Name</label><br>
+                <input type="text" id="name" name="name" required style="width:100%;padding:12px;margin-top:5px;border:1px solid #ccc;border-radius:6px;">
+            </p>
+            <p>
+                <label for="email">Your Email</label><br>
+                <input type="email" id="email" name="email" required style="width:100%;padding:12px;margin-top:5px;border:1px solid #ccc;border-radius:6px;">
+            </p>
+            <p>
+                <label for="message">Your Message</label><br>
+                <textarea id="message" name="message" rows="5" required style="width:100%;padding:12px;margin-top:5px;border:1px solid #ccc;border-radius:6px;"></textarea>
+            </p>
+            <button type="submit" class="home-button" style="border:none;cursor:pointer;">Send Message</button>
+        </form>
+        <a href="#home" class="home-button">← Home</a>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2026 Nova Studio. All rights reserved.</p>
+    <p>Creativity meets technology.</p>
+</footer>
+
+</body>
+</html>
