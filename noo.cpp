@@ -1,15 +1,15 @@
 #include<iostream>
 using namespace std;
 
-int DoubleIt(int num);
+void print(int & n ){
+    n=10;
+    cout<<n;
+}
 
 int main(){
-    int num=DoubleIt(4);
-    cout<<num<<endl;
+    int num=20;
+    print(num);
+}
 
-}
-int DoubleIt(int num){
-    return num*2;
-}
 
 
